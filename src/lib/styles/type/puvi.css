@@ -1,0 +1,85 @@
+/*
+ * The Puvi font provided by Zoho Corporation private limited
+ * is subjected to Terms of Use.
+ * https://www.zoho.com/typefaces/puvi/
+ *
+ * © 2022, Zoho Corporation Pvt. Ltd. All Rights Reserved.
+ */
+
+/* Puvi 400 regular */
+@font-face {
+	font-family: 'puvi';
+	src:
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.woff2') format('woff2'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.woff')  format('woff'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.otf')   format('opentype');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+/* Puvi 400 italics */
+@font-face {
+	font-family: 'puvi';
+	src:
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular_Italic.woff2') format('woff2'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular_Italic.woff')  format('woff'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular_Italic.otf')   format('opentype');
+	font-display: swap;
+	font-style: italic;
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+/* Puvi 500 medium */
+@font-face {
+	font-family: 'puvi';
+	src:
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Medium.woff2') format('woff2'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Medium.woff')  format('woff'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Medium.otf')   format('opentype');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: normal;
+}
+
+/* Puvi 500 medium-italics */
+@font-face {
+	font-family: 'puvi';
+	src:
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Medium_Italic.woff2') format('woff2'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Medium_Italic.woff')  format('woff'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Medium_Italic.otf')   format('opentype');
+	font-display: swap;
+	font-style: italic;
+	font-weight: 500;
+	font-stretch: normal;
+}
+
+/* Puvi 600 bold */
+@font-face {
+	font-family: 'puvi';
+	src:
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.woff2') format('woff2'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.woff')  format('woff'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.otf')   format('opentype');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
+}
+
+/* Puvi 600 bold-italics */
+@font-face {
+	font-family: 'puvi';
+	src:
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold_Italic.woff2') format('woff2'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold_Italic.woff')  format('woff'),
+		url('https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold_Italic.otf')   format('opentype');
+	font-display: swap;
+	font-style: italic;
+	font-weight: 600;
+	font-stretch: normal;
+}

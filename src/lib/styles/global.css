@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./type/font.css);
+@import url(./color/theme.css);
+
+/* Variables
+================================= */
+
+:root {
+	--focus-ring-width: 0.0625rem;
+
+	/* Border Radius */
+	--border-radius-sm: 0.125rem; /* 2px */
+	--border-radius-md: 0.25rem; /* 4px */
+	--border-radius-lg: 0.375rem; /* 6px */
+
+	/* Spacing */
+	--size-xxxs: 0.25rem; /* 4px  */
+	--size-xxs: 0.5rem; /* 8px  */
+	--size-xs: 1rem; /* 16px */
+	--size-sm: 1.25rem; /* 20px */
+	--size-md: 1.5rem; /* 24px */
+	--size-lg: 2rem; /* 32px */
+	--size-xl: 2.5rem; /* 40px */
+	--size-xxl: 3rem; /* 48px */
+	--size-xxxl: 4rem; /* 64px */
+	--size-huge: 5rem; /* 80px */
+}

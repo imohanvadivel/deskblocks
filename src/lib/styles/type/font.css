@@ -1,0 +1,96 @@
+@import './puvi.css';
+@import './roboto.css';
+@import './lato.css';
+
+/* Puvi  */
+:root {
+  --db-fontweight-regular: 400;
+	--db-fontweight-medium: 500;
+	--db-fontweight-bold: 600;
+	--db-fontstack: 'puvi', "Roboto Flex", 'roboto', 'lato', 'inter', system-ui, -apple-system, sans-serif;
+
+  /* Font Size */
+	--db-fontsize-small: 0.75rem;   /* 12px */
+	--db-fontsize-medium: 0.875rem; /* 14px */
+	--db-fontsize-large: 1rem;      /* 16px */
+	--db-fontsize-xlarge: 1.5rem;   /* 24px */
+	
+  /* Line Height */
+	--font-lineHeight: 1rem; /* 16px */
+	--font-lineHeight-large: 1.5rem; /* 24px */
+
+	/* Letter Spacing */
+	--font-letterSpacing-small: 0;
+	--font-letterSpacing-medium: -0.01em;
+}
+
+/* Roboto Flex  */
+:root.font-roboto {
+	--db-fontweight-regular: 370;
+	--db-fontweight-medium: 470;
+	--db-fontweight-bold: 570;
+	--db-fontstack: "Roboto Flex", 'roboto', 'puvi', 'lato', 'inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Lato */
+:root.font-lato {
+	--db-fontweight-regular: 400;
+	--db-fontweight-medium: 600;
+	--db-fontweight-bold: 700;
+	--db-fontstack: 'nlato', 'lato', 'puvi', 'roboto', 'inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Dark Mode */
+.appearance-dark {
+	/* Letter Spacing */
+	--font-letterSpacing-small: 0;
+	--font-letterSpacing-medium: -0.01em;
+}
+
+html {
+	font-family: var(--db-fontstack);
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--font-lineHeight);
+	letter-spacing: var(--font-letterSpacing-medium);
+	color: var(--db-color-text);
+}
+
+
+/* Font Size */
+.db-fontsize-small  { font-size: var(--db-fontsize-small) }
+.db-fontsize-medium { font-size: var(--db-fontsize-medium)}
+.db-fontsize-large  { font-size: var(--db-fontsize-large) }
+.db-fontsize-xlarge { font-size: var(--db-fontsize-xlarge)}
+
+/* Font Weight */
+.db-fontweight-regular { font-weight: var(--db-fontweight-regular) }
+.db-fontweight-medium  { font-weight: var(--db-fontweight-medium)  }
+.db-fontweight-bold    { font-weight: var(--db-fontweight-bold)    }
+
+/* Text Color */
+.db-color-text,.db-color-text-primary { color: var(--db-color-text)             }
+.db-color-text-secondary              { color: var(--db-color-text-secondary)   }
+.db-color-text-tertiary               { color: var(--db-color-text-tertiary)    }
+.db-color-text-brand                  { color: var(--db-color-text-brand)       }
+.db-color-text-info                   { color: var(--db-color-text-info)        }
+.db-color-text-success                { color: var(--db-color-text-success)     }
+.db-color-text-danger                 { color: var(--db-color-text-danger)      }
+.db-color-text-warning                { color: var(--db-color-text-warning)     }
+.db-color-text-disabled               { color: var(--db-color-text-disabled)    }
+.db-color-text-oninverse              { color: var(--db-color-text-oninverse)   }
+.db-color-text-placeholder            { color: var(--db-color-text-placeholder) }
+
+/* Text Alignment */
+.text-align-left   { text-align: left   }
+.text-align-center { text-align: center }
+.text-align-right  { text-align: right  }
+.text-align-justify { text-align: justify }
+
+/* Text decoration */
+.underline { text-decoration: underline }
+.line-through { text-decoration: line-through }
+
+/* Font Sytle */
+.italic { font-style: italic }
+

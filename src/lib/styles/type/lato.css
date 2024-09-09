@@ -1,0 +1,149 @@
+@import url("https://mohanvadivel.com/fonts/nlato.css");
+
+/* nlato 
+@font-face {
+	font-family: 'nlato';
+	src: url('./source/Lato-Regular') format('woff2');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'nlato';
+	src: url('./source/Lato-Semibold') format('woff2');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'nlato';
+	src: url('./source/Lato-Bold') format('woff2');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: normal;
+}
+/*
+/*
+* The Typekit service used to deliver roboto and lato font or fonts
+* for use on websites is provided by Adobe and is subject to these 
+* Terms of Use http://www.adobe.com/products/eulas/tou_typekit. For 
+* font license information, see the list below.
+*
+* lato:
+*   - http://typekit.com/eulas/000000000000000000015235
+*   - http://typekit.com/eulas/00000000000000000001522d
+*   - http://typekit.com/eulas/000000000000000000015232
+*   - http://typekit.com/eulas/000000000000000000015236
+*   - http://typekit.com/eulas/000000000000000000015231
+*   - http://typekit.com/eulas/00000000000000000001522c
+*
+* © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+*/
+
+/* 
+* Typekit project URL
+* https://use.typekit.net/vka3tzf.css
+*/
+
+/* Lato 400 regular 
+
+@font-face {
+	font-family: 'lato';
+	src:
+		url('https://use.typekit.net/af/180254/00000000000000000001522c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+			format('woff2'),
+		url('https://use.typekit.net/af/180254/00000000000000000001522c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+			format('woff'),
+		url('https://use.typekit.net/af/180254/00000000000000000001522c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+			format('opentype');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+/* Lato 400 italics 
+@font-face {
+	font-family: 'lato';
+	src:
+		url('https://use.typekit.net/af/bdde80/00000000000000000001522d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+			format('woff2'),
+		url('https://use.typekit.net/af/bdde80/00000000000000000001522d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+			format('woff'),
+		url('https://use.typekit.net/af/bdde80/00000000000000000001522d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+			format('opentype');
+	font-display: swap;
+	font-style: italic;
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+/* Lato 700 -> 600 regular 
+@font-face {
+	font-family: 'lato';
+	src:
+		url('https://use.typekit.net/af/220823/000000000000000000015231/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+			format('woff2'),
+		url('https://use.typekit.net/af/220823/000000000000000000015231/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+			format('woff'),
+		url('https://use.typekit.net/af/220823/000000000000000000015231/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+			format('opentype');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
+}
+
+/* Lato 700 -> 600 italics 
+@font-face {
+	font-family: 'lato';
+	src:
+		url('https://use.typekit.net/af/6c7e72/000000000000000000015232/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+			format('woff2'),
+		url('https://use.typekit.net/af/6c7e72/000000000000000000015232/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+			format('woff'),
+		url('https://use.typekit.net/af/6c7e72/000000000000000000015232/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+			format('opentype');
+	font-display: swap;
+	font-style: italic;
+	font-weight: 600;
+	font-stretch: normal;
+}
+
+/* Lato 900 -> 700 regular 
+@font-face {
+	font-family: 'lato';
+	src:
+		url('https://use.typekit.net/af/50d55e/000000000000000000015235/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3')
+			format('woff2'),
+		url('https://use.typekit.net/af/50d55e/000000000000000000015235/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3')
+			format('woff'),
+		url('https://use.typekit.net/af/50d55e/000000000000000000015235/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3')
+			format('opentype');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: normal;
+}
+
+/* Lato 900 -> 700 italics 
+@font-face {
+	font-family: 'lato';
+	src:
+		url('https://use.typekit.net/af/efba8b/000000000000000000015236/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3')
+			format('woff2'),
+		url('https://use.typekit.net/af/efba8b/000000000000000000015236/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3')
+			format('woff'),
+		url('https://use.typekit.net/af/efba8b/000000000000000000015236/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3')
+			format('opentype');
+	font-display: swap;
+	font-style: italic;
+	font-weight: 700;
+	font-stretch: normal;
+}
+*/

@@ -1,0 +1,8 @@
+@import './darkTheme.css';
+@import './lightTheme.css';
+
+/* Static Colors */
+:root {
+	--db-color-static-white: #ffffff;
+	--db-color-static-black: #000000;
+}
