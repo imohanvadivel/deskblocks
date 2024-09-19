@@ -82,16 +82,16 @@
 	.checkbox {
 		display: flex;
 		align-items: center;
-		height: var(--size-md);
+		height: var(--db-size-medium);
 		cursor: pointer;
 	}
 
 	.icon {
 		cursor: pointer;
 		position: relative;
-		margin-inline-end: var(--size-xxs);
-		width: var(--size-xs);
-		height: var(--size-xs);
+		margin-inline-end: var(--db-size-xxsmall);
+		width: var(--db-size-xsmall);
+		height: var(--db-size-xsmall);
 		display: flex;
 		align-items: center;
 	}
@@ -104,7 +104,7 @@
 	}
 
 	svg {
-		--checkbox-dimension: calc(var(--size-xs) + 0.125rem);
+		--checkbox-dimension: calc(var(--db-size-xsmall) + 0.125rem);
 		width: var(--checkbox-dimension);
 		height: var(--checkbox-dimension);
 		pointer-events: none;

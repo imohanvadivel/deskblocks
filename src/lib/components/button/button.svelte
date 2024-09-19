@@ -45,13 +45,13 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		height: calc(var(--size-lg) - var(--size-xxxs));
-		border-radius: var(--border-radius-md);
+		height: calc(var(--db-size-large) - var(--db-size-xxxsmall));
+		border-radius: var(--db-border-radius-medium);
 		user-select: none;
 		outline: none;
 		text-decoration: none;
 		flex-shrink: 0;
-		padding: 0 var(--size-xs);
+		padding: 0 var(--db-size-xsmall);
 		border: none;
 		margin: 0.125rem 0;
 		cursor: pointer;
@@ -70,16 +70,16 @@
 	}
 
 	.left-icon :global(> *) {
-		margin-left: calc(-1 * var(--size-xxs));
-		margin-right: var(--size-xxxs);
+		margin-left: calc(-1 * var(--db-size-xxsmall));
+		margin-right: var(--db-size-xxxsmall);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
 	.right-icon :global(> *) {
-		margin-right: calc(-1 * var(--size-xxs));
-		margin-left: var(--size-xxxs);
+		margin-right: calc(-1 * var(--db-size-xxsmall));
+		margin-left: var(--db-size-xxxsmall);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -114,7 +114,7 @@
 		background-color: transparent;
 		color: var(--db-color-text-brand);
 		border: 0.0625rem solid var(--db-color-border-brand-strong);
-		height: calc(var(--size-lg) - var(--size-xxxs));
+		height: calc(var(--db-size-large) - var(--db-size-xxxsmall));
 		--icon-color: var(--db-color-icon-brand);
 	}
 	.secondary:hover {
@@ -142,7 +142,7 @@
 		background-color: transparent;
 		color: var(--db-color-text);
 		border: 0.0625rem solid var(--db-color-border);
-		height: calc(var(--size-lg) - var(--size-xxxs));
+		height: calc(var(--db-size-large) - var(--db-size-xxxsmall));
 		--icon-color: var(--db-color-icon);
 	}
 	.tertiary:hover {

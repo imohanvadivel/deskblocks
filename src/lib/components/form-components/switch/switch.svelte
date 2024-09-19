@@ -84,14 +84,14 @@
 	}
 
 	.size-small {
-		width: var(--size-md);
-		height: calc(var(--size-xs) - 0.25rem);
+		width: var(--db-size-medium);
+		height: calc(var(--db-size-xsmall) - 0.25rem);
 		margin: 0.125rem 0;
 	}
 
 	.size-large {
-		width: var(--size-lg);
-		height: calc(var(--size-md) - 0.375rem);
+		width: var(--db-size-large);
+		height: calc(var(--db-size-medium) - 0.375rem);
 		margin: 0.1875rem 0;
 	}
 

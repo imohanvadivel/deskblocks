@@ -7,7 +7,8 @@
   --db-fontweight-regular: 400;
 	--db-fontweight-medium: 500;
 	--db-fontweight-bold: 600;
-	--db-fontstack: 'puvi', "Roboto Flex", 'roboto', 'lato', 'inter', system-ui, -apple-system, sans-serif;
+	--db-fontstack: 'puvi', 'Roboto Flex', 'roboto', 'lato', 'inter', system-ui, -apple-system, sans-serif;
+	--db-fontstack-mono: 'sf mono', 'jetbrains mono', 'zoho puvi mono', monospace;
 
   /* Font Size */
 	--db-fontsize-small: 0.75rem;   /* 12px */

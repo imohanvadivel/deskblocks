@@ -49,16 +49,16 @@
 	.radio {
 		display: flex;
 		align-items: center;
-		height: var(--size-md);
+		height: var(--db-size-medium);
 		cursor: pointer;
 	}
 
 	.icon {
 		cursor: pointer;
 		position: relative;
-		width: var(--size-xs);
-		height: var(--size-xs);
-		margin-inline-end: var(--size-xxs);
+		width: var(--db-size-xsmall);
+		height: var(--db-size-xsmall);
+		margin-inline-end: var(--db-size-xxsmall);
 	}
 
 	input {

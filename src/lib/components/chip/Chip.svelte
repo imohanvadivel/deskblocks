@@ -33,15 +33,15 @@
 		font-size: var(--db-fontsize-medium);
 		color: var(--db-color-text);
 		background-color: var(--db-color-bg-tertiary);
-		height: var(--size-md);
+		height: var(--db-size-medium);
 		display: flex;
 		align-items: center;
-		padding: 0 var(--size-xxs);
+		padding: 0 var(--db-size-xxsmall);
 		border-radius: 1rem;
 		user-select: none;
 		position: relative;
 		overflow: hidden;
-		--icon-size: calc(var(--size-md) - 0.125rem); 
+		--icon-size: calc(var(--db-size-medium) - 0.125rem); 
 	}
 	.chip:hover {
 		background-color: var(--db-color-bg-tertiary-hover);
@@ -57,7 +57,7 @@
 		right: 0;
 		height: 100%;
 		z-index: 1;
-		padding: 0 var(--size-xxs);
+		padding: 0 var(--db-size-xxsmall);
 		display: none;
 	}
 
@@ -76,7 +76,7 @@
 	.icon-cnt {
 		border: 1px solid var(--db-color-border);
 		border-radius: 50%;
-		margin-right: var(--size-xxxs);
+		margin-right: var(--db-size-xxxsmall);
 		width: var(--icon-size);
 		height: var(--icon-size);
 		display: flex;

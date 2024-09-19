@@ -1,6 +1,6 @@
 {
 	"name": "deskblocks",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A UI component library for building Zoho Desk Extensions",
 	"author": {
 		"name": "Mohan Vadivel",
