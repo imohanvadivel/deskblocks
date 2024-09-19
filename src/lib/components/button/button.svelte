@@ -59,8 +59,8 @@
 
 		font-family: var(--db-fontstack);
 		font-size: var(--db-fontsize-small);
-		letter-spacing: var(--font-letterSpacing-sm);
-		line-height: var(--font-lineHeight);
+		letter-spacing: var(--db-letterSpacing-small);
+		line-height: var(--db-lineHeight);
 	}
 	.button:hover {
 		cursor: pointer;

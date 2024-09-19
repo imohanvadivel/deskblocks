@@ -16,12 +16,12 @@
 	--db-fontsize-xlarge: 1.5rem;   /* 24px */
 	
   /* Line Height */
-	--font-lineHeight: 1rem; /* 16px */
-	--font-lineHeight-large: 1.5rem; /* 24px */
+	--db-lineHeight: 1rem; /* 16px */
+	--db-lineHeight-large: 1.5rem; /* 24px */
 
 	/* Letter Spacing */
-	--font-letterSpacing-small: 0;
-	--font-letterSpacing-medium: -0.01em;
+	--db-letterSpacing-small: 0;
+	--db-letterSpacing-medium: -0.01em;
 }
 
 /* Roboto Flex  */
@@ -43,16 +43,16 @@
 /* Dark Mode */
 .appearance-dark {
 	/* Letter Spacing */
-	--font-letterSpacing-small: 0;
-	--font-letterSpacing-medium: -0.01em;
+	--db-letterSpacing-small: 0;
+	--db-letterSpacing-medium: -0.01em;
 }
 
 html {
 	font-family: var(--db-fontstack);
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-regular);
-	line-height: var(--font-lineHeight);
-	letter-spacing: var(--font-letterSpacing-medium);
+	line-height: var(--db-lineHeight);
+	letter-spacing: var(--db-letterSpacing-medium);
 	color: var(--db-color-text);
 }
 
