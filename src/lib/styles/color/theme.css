@@ -5,4 +5,20 @@
 :root {
 	--db-color-static-white: #ffffff;
 	--db-color-static-black: #000000;
+
+	background-color: var(--db-color-bg);
+	color: var(--db-color-text);
+}
+
+:root.pure-dark{
+	--db-color-bg: #212121;
+	--db-color-bg-hover: #262626;
+	--db-color-bg-secondary: #262626;
+	--db-color-bg-secondary-hover: #171717;
+	--db-color-bg-tertiary: #171717;
+	--db-color-bg-disabled: #474747;
+	--db-color-bg-selected: #252d37;
+	--db-color-bg-switch-inactive: #474747;
+	--db-color-bg-switch-inactive-hover: #5e5e5e;
+	--db-color-bg-switch-inactive-disabled: #3b3b3b;
 }
