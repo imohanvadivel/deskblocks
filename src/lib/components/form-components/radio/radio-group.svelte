@@ -8,11 +8,14 @@
 	export let inline = false;
 	export let rowGap: string | undefined = undefined;
 	export let columnGap: string | undefined = undefined;
+	export { className as class };
+	let className = '';
+
 	const groupStore = writable({ name, group, disabled });
 	setContext('radio-group', groupStore);
 </script>
 
-<fieldset class:inline style="--radio-row-gap: {rowGap}; --radio-column-gap: {columnGap}" on:change>
+<fieldset class="radio-group {className}" class:inline style="--radio-row-gap: {rowGap}; --radio-column-gap: {columnGap}" on:change>
 	<slot />
 </fieldset>
 

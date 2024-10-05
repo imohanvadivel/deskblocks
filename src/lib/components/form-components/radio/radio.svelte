@@ -7,6 +7,8 @@
 	export let value: string = '';
 	export let name = '';
 	export let id = 'db-' + crypto.randomUUID();
+	export { className as class };
+	let className = '';
 
 	type RadioGroupStore = Writable<{ name: string; group: string | number | undefined; disabled: boolean }>;
 	const groupStore = getContext('radio-group') as RadioGroupStore;
@@ -17,7 +19,7 @@
 	});
 </script>
 
-<div class="radio" class:disabled>
+<div class="radio {className}" class:disabled>
 	<div class="icon">
 		{#if groupStore && $groupStore.group}
 			<input type="radio" bind:group={$groupStore.group} {name} {value} {disabled} {id} on:change />
