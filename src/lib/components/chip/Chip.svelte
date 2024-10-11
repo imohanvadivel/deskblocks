@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 
+	export let disabled = false;
 	export let dismissible = false;
 	export { className as class };
 	let className = '';
@@ -11,7 +12,7 @@
 	}
 </script>
 
-<div class="{className} chip" class:has-icon={$$slots.icon}>
+<div class="{className} chip" class:has-icon={$$slots.icon} class:disabled>
 	<!-- Left Icon -->
 	{#if $$slots.icon}
 		<span class="icon-cnt"> <slot name="icon" /> </span>
@@ -32,7 +33,7 @@
 		font-family: var(--db-fontstack);
 		font-size: var(--db-fontsize-medium);
 		color: var(--db-color-text);
-		background-color: var(--db-color-bg-tertiary);
+		background-color: var(--db-color-bg-chip);
 		height: var(--db-size-medium);
 		display: flex;
 		align-items: center;
@@ -41,10 +42,21 @@
 		user-select: none;
 		position: relative;
 		overflow: hidden;
-		--icon-size: calc(var(--db-size-medium) - 0.125rem); 
+		--icon-size: calc(var(--db-size-medium) - 0.125rem);
 	}
 	.chip:hover {
-		background-color: var(--db-color-bg-tertiary-hover);
+		background-color: var(--db-color-bg-chip-hover);
+	}
+
+	.chip.disabled,
+	.chip.disabled:hover {
+		background-color: var(--db-color-chip-disabled);
+		color: var(--db-color-text-disabled);
+		cursor: not-allowed;
+	}
+	.chip.disabled :global(.icon-cnt .icon) {
+		color: var(--db-color-text-disabled);
+		fill: var(--db-color-icon-disabled);
 	}
 
 	.close {

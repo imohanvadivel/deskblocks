@@ -12,7 +12,10 @@ import {
 	Switch,
 	Select,
 	FormHelpMessage,
-	FormErrorMessage
+	FormErrorMessage,
+	DateTimeInput,
+	DateInput,
+	TimeInput
 } from './components/form-components/index.js';
 import { Link } from './components/link/index.js';
 import { Chip } from './components/chip/index.js';
@@ -23,6 +26,7 @@ import { Text } from './components/typography/index.js';
 // import { Popover, PopoverTrigger, PopoverContent } from './components/popover/index.js';
 import { Portal } from './components/portal/index.js';
 import { tooltip } from './components/tooltip/index.js';
+import { Tabs, TabItem } from './components/tab/index.js';
 
 export {
 	Avatar,
@@ -40,6 +44,9 @@ export {
 	Select,
 	FormHelpMessage,
 	FormErrorMessage,
+	DateTimeInput,
+	DateInput,
+	TimeInput,
 	Link,
 	Chip,
 	Spinner,
@@ -47,5 +54,7 @@ export {
 	VisuallyHidden,
 	Text,
 	Portal,
-	tooltip
+	tooltip,
+	Tabs,
+	TabItem
 };
