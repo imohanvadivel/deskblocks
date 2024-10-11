@@ -14,7 +14,7 @@
 	$: svgSize = `calc(${iconSize} - 0.5rem)`;
 
 	let brandColor = `var(--db-color-border-brand-strong)`;
-	let baseColor = `var(--db-color-border-secondary)`;
+	let baseColor = `var(--db-color-border-light)`;
 
 	if (onbrand) {
 		brandColor = `var(--db-color-static-white)`;

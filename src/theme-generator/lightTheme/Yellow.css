@@ -113,6 +113,9 @@
 	--db-color-bg-selected: #fff5e7;
 	--db-color-bg-selected-hover: #ffefd2;
 	--db-color-bg-selected-pressed: #ffefd2;
+	--db-color-bg-chip: #ebebe8;
+	--db-color-bg-chip-hover: #e2e3e0;
+	--db-color-bg-chip-disabled: #f1f1ee;
 	--db-color-icon-oninverse: #fff;
 	--db-color-text-brand: #a57e00;
 	--db-color-icon-disabled: #c6c7c4;

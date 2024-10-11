@@ -8,6 +8,10 @@ import { Switch } from './switch/index.js';
 import { FormHelpMessage, FormErrorMessage } from './form-helper-text/index.js';
 import { Select } from './select/index.js';
 import { MultiSelect } from './multi-select/index.js';
+import { DateTimeInput } from './date-time/index.js';
+import { DateInput } from './date/index.js';
+import { TimeInput } from './time/index.js';
+
 export {
 	FormLabel,
 	Checkbox,
@@ -21,5 +25,8 @@ export {
 	Select,
 	MultiSelect,
 	FormHelpMessage,
-	FormErrorMessage
+	FormErrorMessage,
+	DateTimeInput,
+	DateInput,
+	TimeInput
 };

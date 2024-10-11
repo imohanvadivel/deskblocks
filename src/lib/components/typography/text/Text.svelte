@@ -26,6 +26,7 @@
 		| 'h6' = 'span';
 	export let decoration: 'underline' | 'line-through' | 'none' = 'none';
 	export let italics: boolean = false;
+	export let disabled: boolean = false;
 	export { className as class };
 	let className = '';
 
@@ -51,10 +52,11 @@
 
 <svelte:element
 	this={tag}
-	class="{className} text db-color-text-{type} db-fontweight-{weight}"
+	class="{className} text .type-{type} db-fontweight-{weight}"
 	style="text-align: {align}; text-decoration: {decoration}; font-size: {fontSize}"
 	class:customSize={iscustomSize}
 	class:italics
+	class:disabled
 >
 	<slot />
 </svelte:element>
@@ -63,5 +65,27 @@
 	.text {
 		font-family: var(--db-fontstack);
 		text-underline-position: from-font;
+	}
+	.disabled,
+	.disabled.type-primary,
+	.disabled.type-secondary,
+	.disabled.type-tertiary {
+		color: var(--db-color-text-disabled);
+	}
+
+	.disabled.type-brand {
+		color: var(--db-color-text-brand-disabled);
+	}
+	.disabled.type-info {
+		color: var(--db-color-text-info-disabled);
+	}
+	.disabled.type-success {
+		color: var(--db-color-text-success-disabled);
+	}
+	.disabled.type-warning {
+		color: var(--db-color-text-warning-disabled);
+	}
+	.disabled.type-danger {
+		color: var(--db-color-text-danger-disabled);
 	}
 </style>

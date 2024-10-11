@@ -133,6 +133,10 @@ const darkRepeatingProperty: string[] = [
 	`--db-color-bg-switch-inactive-hover`,
 	`--db-color-bg-switch-inactive-disabled`,
 
+	`--db-color-bg-chip`,
+	`--db-color-bg-chip-hover`,
+	`--db-color-bg-chip-disabled`,
+
 	`--db-color-bg-info`,
 	`--db-color-bg-info-hover`,
 	`--db-color-bg-info-pressed`,
@@ -261,7 +265,7 @@ const darkRepeatingProperty: string[] = [
 async function processCSS(filesPaths: string[], theme: 'light' | 'dark', outputFileName: string) {
 	let processedCSS = ``;
 
-  processedCSS += `:root.appearance-${theme}{`;
+	processedCSS += `:root.appearance-${theme}{`;
 	// if (theme === 'dark') {
 	// 	processedCSS += `:root.appearance-${theme}{`;
 	// } else {
@@ -284,7 +288,7 @@ async function processCSS(filesPaths: string[], theme: 'light' | 'dark', outputF
 		const data: { [key: string]: string } = {};
 		let localCSS: string;
 
-    localCSS = `:root.appearance-${theme}.theme-${fileName}{`;
+		localCSS = `:root.appearance-${theme}.theme-${fileName}{`;
 		// if (theme === 'dark') {
 		// 	localCSS = `:root.appearance-${theme}.theme-${fileName}{`;
 		// } else {
