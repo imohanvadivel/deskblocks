@@ -5,9 +5,10 @@
 	export let dismissible = false;
 	export { className as class };
 	let className = '';
-
+	
+	const dispatch = createEventDispatcher();
+	
 	function handleDismiss() {
-		const dispatch = createEventDispatcher();
 		dispatch('dismiss');
 	}
 </script>
