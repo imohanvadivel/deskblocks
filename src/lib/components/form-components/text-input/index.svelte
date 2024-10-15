@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { FormHelpMsg } from "../form-helper-text/index.js";
+
 	export let id: string | undefined = undefined;
 	export let value: string | undefined = undefined;
 	export let placeholder: string | undefined = undefined;
@@ -21,52 +23,55 @@
 	}
 </script>
 
-<div
-	class="{className} input-field"
-	class:active={isFocused}
-	class:invalid
-	class:readonly
-	class:disabled
->
-	{#if $$slots.left}
-		<div class="left-slot">
-			<slot name="left" />
-		</div>
+<div class="outer-cnt {className}">
+	<div class="input-field" class:active={isFocused} class:invalid class:readonly class:disabled>
+		{#if $$slots.left}
+			<div class="left-slot">
+				<slot name="left" />
+			</div>
+		{/if}
+
+		<input
+			type="text"
+			bind:value
+			on:focus={() => (isFocused = true)}
+			on:blur={() => (isFocused = false)}
+			on:change={handleValidity}
+			{id}
+			{name}
+			{placeholder}
+			{required}
+			{disabled}
+			{readonly}
+			{minlength}
+			{maxlength}
+			{spellcheck}
+			{pattern}
+			on:change
+			on:input
+			on:click
+			on:mouseover
+			on:mouseenter
+			on:mouseleave
+			on:keydown
+			on:keyup
+			on:focus
+			on:blur
+			on:paste
+		/>
+
+		{#if $$slots.right}
+			<div class="right-slot">
+				<slot name="right" />
+			</div>
+		{/if}
+	</div>
+
+	{#if $$slots['help-msg']}
+		<FormHelpMsg><slot name="help-msg" /></FormHelpMsg>
 	{/if}
-
-	<input
-		type="text"
-		bind:value
-		on:focus={() => (isFocused = true)}
-		on:blur={() => (isFocused = false)}
-		on:change={handleValidity}
-		{id}
-		{name}
-		{placeholder}
-		{required}
-		{disabled}
-		{readonly}
-		{minlength}
-		{maxlength}
-		{spellcheck}
-		{pattern}
-		on:change
-		on:input
-		on:click
-		on:mouseover
-		on:mouseenter
-		on:mouseleave
-		on:keydown
-		on:keyup
-		on:focus
-		on:blur
-		on:paste
-	/>
-
-	{#if $$slots.right}
-		<div class="right-slot">
-			<slot name="right" />
-		</div>
+	{#if invalid && $$slots['error-msg']}
+		<FormHelpMsg invalid><slot name="error-msg" /></FormHelpMsg>
 	{/if}
 </div>
 
@@ -91,7 +96,7 @@
 		height: 100%;
 		background-color: var(--db-color-bg);
 		color: var(--db-color-text);
-    font-family: var(--db-fontstack);
+		font-family: var(--db-fontstack);
 		font-size: var(--db-fontsize-medium);
 		padding: 0.5rem 0 0.25rem 0;
 	}
@@ -108,7 +113,14 @@
 	.input-field.invalid {
 		border-color: var(--db-color-border-danger-strong);
 	}
-	.left-slot, .right-slot {
+	.left-slot,
+	.right-slot {
 		margin-bottom: -0.5rem;
+	}
+	.outer-cnt {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 0.5rem;
 	}
 </style>

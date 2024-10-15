@@ -1,4 +1,4 @@
-import FormErrorMessage from './FormErrorMessage.svelte';
-import FormHelpMessage from './FormHelpMessage.svelte';
+import FormHelpMsg from './FormHelpMessage.svelte';
 
-export { FormErrorMessage, FormHelpMessage };
+export { FormHelpMsg };
+

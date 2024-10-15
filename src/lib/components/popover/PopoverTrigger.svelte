@@ -13,6 +13,13 @@
   }
 </script>
 
-<div bind:this={triggerEl} style="display: contents;" on:click={handleClick}>
+<div
+  bind:this={triggerEl}
+  style="display: contents;"
+  on:click={handleClick}
+  on:keydown={(e) => e.key === 'Enter' && handleClick()}
+  role="button"
+  tabindex="0"
+>
 	<slot />
 </div>

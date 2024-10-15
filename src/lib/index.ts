@@ -11,8 +11,7 @@ import {
 	Textarea,
 	Switch,
 	Select,
-	FormHelpMessage,
-	FormErrorMessage,
+	FormHelpMsg,	
 	DateTimeInput,
 	DateInput,
 	TimeInput
@@ -23,7 +22,6 @@ import { Spinner } from './components/spinner/index.js';
 import { Icon } from './components/icon/index.js';
 import { VisuallyHidden } from './components/visually-hidden/index.js';
 import { Text } from './components/typography/index.js';
-// import { Popover, PopoverTrigger, PopoverContent } from './components/popover/index.js';
 import { Portal } from './components/portal/index.js';
 import { tooltip } from './components/tooltip/index.js';
 import { Tabs, TabItem } from './components/tab/index.js';
@@ -42,8 +40,7 @@ export {
 	Textarea,
 	Switch,
 	Select,
-	FormHelpMessage,
-	FormErrorMessage,
+	FormHelpMsg,
 	DateTimeInput,
 	DateInput,
 	TimeInput,

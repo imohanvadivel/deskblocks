@@ -44,6 +44,7 @@
 		position: relative;
 		overflow: hidden;
 		--icon-size: calc(var(--db-size-medium) - 0.125rem);
+		cursor: default;
 	}
 	.chip:hover {
 		background-color: var(--db-color-bg-chip-hover);
@@ -51,7 +52,7 @@
 
 	.chip.disabled,
 	.chip.disabled:hover {
-		background-color: var(--db-color-chip-disabled);
+		background-color: var(--db-color-bg-chip-disabled);
 		color: var(--db-color-text-disabled);
 		cursor: not-allowed;
 	}

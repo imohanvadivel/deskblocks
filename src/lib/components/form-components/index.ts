@@ -5,7 +5,7 @@ import { TextInput } from './text-input/index.js';
 import { NumberInput } from './number-input/index.js';
 import { Textarea } from './textarea/index.js';
 import { Switch } from './switch/index.js';
-import { FormHelpMessage, FormErrorMessage } from './form-helper-text/index.js';
+import { FormHelpMsg } from './form-helper-text/index.js';
 import { Select } from './select/index.js';
 import { MultiSelect } from './multi-select/index.js';
 import { DateTimeInput } from './date-time/index.js';
@@ -24,8 +24,7 @@ export {
 	Switch,
 	Select,
 	MultiSelect,
-	FormHelpMessage,
-	FormErrorMessage,
+	FormHelpMsg,
 	DateTimeInput,
 	DateInput,
 	TimeInput

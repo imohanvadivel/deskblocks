@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { FormHelpMsg } from "../form-helper-text/index.js";
+
 	export let id: string | undefined = undefined;
 	export let value: string | undefined = undefined;
 	export let min: string | undefined = undefined;
@@ -19,34 +21,43 @@
 	}
 </script>
 
-<div
-	class="time-input {className}"
-	class:active={isFocused}
-	class:invalid
-	class:readonly
-	class:disabled
->
-	{#if $$slots.left}
-		<div class="left-slot">
-			<slot name="left" />
-		</div>
-	{/if}
+<div class="outer-cnt {className}">
+	<div
+		class="time-input"
+		class:active={isFocused}
+		class:invalid
+		class:readonly
+		class:disabled
+	>
+		{#if $$slots.left}
+			<div class="left-slot">
+				<slot name="left" />
+			</div>
+		{/if}
 
-	<input
-		type="time"
-		bind:value
-		on:focus={() => (isFocused = true)}
-		on:blur={() => (isFocused = false)}
-		on:change={handleValidity}
-		{id}
-		{name}
-		{required}
-		{disabled}
-		{readonly}
-		{min}
-		{max}
-		{step}
-	/>
+		<input
+			type="time"
+			bind:value
+			on:focus={() => (isFocused = true)}
+			on:blur={() => (isFocused = false)}
+			on:change={handleValidity}
+			{id}
+			{name}
+			{required}
+			{disabled}
+			{readonly}
+			{min}
+			{max}
+			{step}
+		/>
+	</div>
+
+	{#if $$slots['help-msg']}
+		<FormHelpMsg><slot name="help-msg" /></FormHelpMsg>
+	{/if}
+	{#if invalid && $$slots['error-msg']}
+		<FormHelpMsg invalid><slot name="error-msg" /></FormHelpMsg>
+	{/if}
 </div>
 
 <style>
@@ -91,5 +102,12 @@
 
 	.left-slot {
 		margin-bottom: -0.5rem;
+	}
+
+	.outer-cnt {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 0.5rem;
 	}
 </style>
