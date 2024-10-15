@@ -7,7 +7,6 @@ import { Textarea } from './textarea/index.js';
 import { Switch } from './switch/index.js';
 import { FormHelpMsg } from './form-helper-text/index.js';
 import { Select } from './select/index.js';
-import { MultiSelect } from './multi-select/index.js';
 import { DateTimeInput } from './date-time/index.js';
 import { DateInput } from './date/index.js';
 import { TimeInput } from './time/index.js';
@@ -23,7 +22,6 @@ export {
 	Textarea,
 	Switch,
 	Select,
-	MultiSelect,
 	FormHelpMsg,
 	DateTimeInput,
 	DateInput,
