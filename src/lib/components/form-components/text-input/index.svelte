@@ -25,9 +25,9 @@
 
 <div class="outer-cnt {className}">
 	<div class="input-field" class:active={isFocused} class:invalid class:readonly class:disabled>
-		{#if $$slots.left}
+		{#if $$slots['left-icon']}
 			<div class="left-slot">
-				<slot name="left" />
+				<slot name="left-icon" />
 			</div>
 		{/if}
 
@@ -60,9 +60,9 @@
 			on:paste
 		/>
 
-		{#if $$slots.right}
+		{#if $$slots['right-icon']}
 			<div class="right-slot">
-				<slot name="right" />
+				<slot name="right-icon" />
 			</div>
 		{/if}
 	</div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { FormHelpMsg } from "../form-helper-text/index.js";
+	import { FormHelpMsg } from '../form-helper-text/index.js';
 
 	export let id: string | undefined = undefined;
 	export let value: string | undefined = undefined;
@@ -21,17 +21,11 @@
 </script>
 
 <div class="outer-cnt {className}">
-	<div
-		class="date-time-input"
-		class:active={isFocused}
-		class:invalid
-		class:readonly
-		class:disabled
-	>
-		{#if $$slots.left}
+	<div class="date-time-input" class:active={isFocused} class:invalid class:readonly class:disabled>
+		{#if $$slots['left-icon']}
 			<div class="left-slot">
-				<slot name="left" />
-				</div>
+				<slot name="left-icon" />
+			</div>
 		{/if}
 
 		<input
@@ -41,12 +35,12 @@
 			on:blur={() => (isFocused = false)}
 			on:change={handleValidity}
 			{id}
-				{name}
-				{required}
-				{disabled}
-				{readonly}
-				{min}
-				{max}
+			{name}
+			{required}
+			{disabled}
+			{readonly}
+			{min}
+			{max}
 		/>
 	</div>
 

@@ -29,9 +29,9 @@
 		class:readonly
 		class:disabled
 	>
-		{#if $$slots.left}
+		{#if $$slots['left-icon']}
 			<div class="left-slot">
-				<slot name="left" />
+				<slot name="left-icon" />
 			</div>
 		{/if}
 

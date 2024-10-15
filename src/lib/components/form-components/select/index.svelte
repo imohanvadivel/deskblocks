@@ -528,7 +528,11 @@
 				form_input?.setCustomValidity(msg);
 			}}
 		/>
-		<slot name="left" />
+		{#if $$slots['left-icon']}
+			<div class="left-slot">
+				<slot name="left-icon" />
+			</div>
+		{/if}
 		<ul class="selected" aria-label="selected options">
 			{#each selected as option, idx (duplicates ? [key(option), idx] : key(option))}
 				<Chip
@@ -852,5 +856,9 @@
 	:where(div.outer-cnt) {
 		row-gap: 0.5rem;
 		width: 100%;
+	}
+
+	:where(div.select > .left-slot) {
+		margin-bottom: -0.5rem;
 	}
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { FormHelpMsg } from "../form-helper-text/index.js";
+	import { FormHelpMsg } from '../form-helper-text/index.js';
 
 	export let id: string | undefined = undefined;
 	export let value: number | undefined = undefined;
@@ -23,16 +23,10 @@
 </script>
 
 <div class="outer-cnt {className}">
-	<div
-		class="input-field"
-		class:active={isFocused}
-		class:invalid
-		class:readonly
-		class:disabled
-	>
-		{#if $$slots.left}
+	<div class="input-field" class:active={isFocused} class:invalid class:readonly class:disabled>
+		{#if $$slots['left-icon']}
 			<div class="left-slot">
-				<slot name="left" />
+				<slot name="left-icon" />
 			</div>
 		{/if}
 
@@ -64,9 +58,9 @@
 			on:paste
 		/>
 
-		{#if $$slots.right}
+		{#if $$slots['right-icon']}
 			<div class="right-slot">
-				<slot name="right" />
+				<slot name="right-icon" />
 			</div>
 		{/if}
 	</div>
@@ -117,7 +111,8 @@
 	.input-field.invalid {
 		border-color: var(--db-color-border-danger-strong);
 	}
-	.left-slot, .right-slot {
+	.left-slot,
+	.right-slot {
 		margin-bottom: -0.5rem;
 	}
 	.outer-cnt {
