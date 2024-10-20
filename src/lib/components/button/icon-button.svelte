@@ -11,7 +11,20 @@
 </script>
 
 <div>
-	<Button {variant} {disabled} {href} {tabindex} {popovertarget} class="{className} icon-button">
+	<Button
+		on:click
+		on:focus
+		on:blur
+		on:mouseover
+		on:mouseenter
+		on:mouseleave
+		{variant}
+		{disabled}
+		{href}
+		{tabindex}
+		{popovertarget}
+		class="{className} icon-button"
+	>
 		<slot />
 	</Button>
 </div>
