@@ -122,9 +122,6 @@ const darkRepeatingProperty: string[] = [
 	`--db-color-bg-tertiary-hover`,
 	`--db-color-bg-inverse`,
 	`--db-color-bg-disabled`,
-	`--db-color-bg-selected`,
-	`--db-color-bg-selected-hover`,
-	`--db-color-bg-selected-pressed`,
 
 	`--db-color-bg-switch-active`,
 	`--db-color-bg-switch-active-hover`,
