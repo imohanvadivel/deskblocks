@@ -35,5 +35,10 @@
 		--icon-button-dimension: calc(var(--db-size-large) - var(--db-size-xxxsmall));
 		height: var(--icon-button-dimension);
 		width: var(--icon-button-dimension);
+		cursor: pointer;
+	}
+
+	div :global(.icon) {
+		pointer-events: none;
 	}
 </style>

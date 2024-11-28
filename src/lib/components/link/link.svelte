@@ -69,4 +69,8 @@
 	a :not(.inline), span :not(.inline) {
 		display: flex;
 	}
+
+	a :global(.icon) {
+		pointer-events: none;
+	}
 </style>
