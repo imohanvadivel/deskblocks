@@ -3,6 +3,7 @@
 
 	export let disabled = false;
 	export let dismissible = false;
+	export let tone: 'neutral' | 'info' | 'success' | 'warning' | 'danger' = 'neutral';
 	export { className as class };
 	let className = '';
 	
@@ -13,7 +14,7 @@
 	}
 </script>
 
-<div class="{className} chip" class:has-icon={$$slots.icon} class:disabled>
+<div class="{className} chip tone-{tone}" class:has-icon={$$slots.icon} class:disabled>
 	<!-- Left Icon -->
 	{#if $$slots.icon}
 		<span class="icon-cnt"> <slot name="icon" /> </span>
@@ -48,6 +49,27 @@
 	}
 	.chip:hover {
 		background-color: var(--db-color-bg-chip-hover);
+	}
+
+	.chip.tone-info,
+	.chip.tone-info:hover {
+		background-color: var(--db-color-bg-info-secondary);
+		color: var(--db-color-text-info);
+	}
+	.chip.tone-success,
+	.chip.tone-success:hover {
+		background-color: var(--db-color-bg-success-secondary);
+		color: var(--db-color-text-success);
+	}
+	.chip.tone-warning,
+	.chip.tone-warning:hover {
+		background-color: var(--db-color-bg-warning-secondary);
+		color: var(--db-color-text-warning);
+	}
+	.chip.tone-danger,
+	.chip.tone-danger:hover {
+		background-color: var(--db-color-bg-danger-secondary);
+		color: var(--db-color-text-danger);
 	}
 
 	.chip.disabled,

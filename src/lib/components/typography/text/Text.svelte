@@ -52,7 +52,7 @@
 
 <svelte:element
 	this={tag}
-	class="{className} text .type-{type} db-fontweight-{weight}"
+	class="{className} text type-{type} db-fontweight-{weight}"
 	style="text-align: {align}; text-decoration: {decoration}; font-size: {fontSize}"
 	class:customSize={iscustomSize}
 	class:italics
@@ -65,6 +65,33 @@
 	.text {
 		font-family: var(--db-fontstack);
 		text-underline-position: from-font;
+	}
+	.type-primary {
+		color: var(--db-color-text);
+	}
+	.type-secondary {
+		color: var(--db-color-text-secondary);
+	}
+	.type-tertiary {
+		color: var(--db-color-text-tertiary);
+	}
+	.type-brand {
+		color: var(--db-color-text-brand);
+	}
+	.type-info {
+		color: var(--db-color-text-info);
+	}
+	.type-success {
+		color: var(--db-color-text-success);
+	}
+	.type-warning {
+		color: var(--db-color-text-warning);
+	}
+	.type-danger {
+		color: var(--db-color-text-danger);
+	}
+	.type-oninverse {
+		color: var(--db-color-text-oninverse);
 	}
 	.disabled,
 	.disabled.type-primary,

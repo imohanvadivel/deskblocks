@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
 	export let icon: string | undefined = undefined;
-	export let size: 'small' | 'medium' | number = 'small';
+	export let size: 'small' | 'medium' | 'large' | number = 'small';
 	export let color: string | undefined = undefined;
 	export { className as class };
 	let className = '';
